@@ -19,6 +19,8 @@
 		0A067E2E25CB542F0031A2F4 /* Daily.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A067E2D25CB542F0031A2F4 /* Daily.swift */; };
 		0A26442625CC94DF0068380B /* Minutely.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A26442525CC94DF0068380B /* Minutely.swift */; };
 		0A26442925CC97780068380B /* Decodable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A26442825CC97780068380B /* Decodable+Extensions.swift */; };
+		0A9A1CEC25CC9C4000F2A7EF /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9A1CEB25CC9C4000F2A7EF /* NetworkManager.swift */; };
+		0A9A1CF125CC9CFA00F2A7EF /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9A1CF025CC9CFA00F2A7EF /* WeatherViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		0A067E2D25CB542F0031A2F4 /* Daily.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daily.swift; sourceTree = "<group>"; };
 		0A26442525CC94DF0068380B /* Minutely.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Minutely.swift; sourceTree = "<group>"; };
 		0A26442825CC97780068380B /* Decodable+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decodable+Extensions.swift"; sourceTree = "<group>"; };
+		0A9A1CEB25CC9C4000F2A7EF /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		0A9A1CF025CC9CFA00F2A7EF /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,8 +73,10 @@
 			isa = PBXGroup;
 			children = (
 				0A067E0C25CA024B0031A2F4 /* AppDelegate.swift */,
-				0A067E0E25CA024B0031A2F4 /* ViewController.swift */,
-				0A067E1F25CA0D300031A2F4 /* WeatherTableViewController.swift */,
+				0A9A1CEB25CC9C4000F2A7EF /* NetworkManager.swift */,
+				0A9A1CE925CC9C3100F2A7EF /* Controller */,
+				0A9A1CF325CC9D0400F2A7EF /* ViewModel */,
+				0A9A1CEE25CC9C8A00F2A7EF /* Extension */,
 				0A067E2825CB52CD0031A2F4 /* Model */,
 				0A067E1025CA024B0031A2F4 /* Main.storyboard */,
 				0A067E1325CA024D0031A2F4 /* Assets.xcassets */,
@@ -88,9 +94,33 @@
 				0A26442525CC94DF0068380B /* Minutely.swift */,
 				0A067E2525CB52B10031A2F4 /* Hourly.swift */,
 				0A067E2D25CB542F0031A2F4 /* Daily.swift */,
-				0A26442825CC97780068380B /* Decodable+Extensions.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		0A9A1CE925CC9C3100F2A7EF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0A067E0E25CA024B0031A2F4 /* ViewController.swift */,
+				0A067E1F25CA0D300031A2F4 /* WeatherTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0A9A1CEE25CC9C8A00F2A7EF /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0A26442825CC97780068380B /* Decodable+Extensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		0A9A1CF325CC9D0400F2A7EF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0A9A1CF025CC9CFA00F2A7EF /* WeatherViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +195,8 @@
 			files = (
 				0A26442625CC94DF0068380B /* Minutely.swift in Sources */,
 				0A067E2325CA272A0031A2F4 /* Weather.swift in Sources */,
+				0A9A1CEC25CC9C4000F2A7EF /* NetworkManager.swift in Sources */,
+				0A9A1CF125CC9CFA00F2A7EF /* WeatherViewModel.swift in Sources */,
 				0A067E2625CB52B10031A2F4 /* Hourly.swift in Sources */,
 				0A067E2B25CB52D60031A2F4 /* Currently.swift in Sources */,
 				0A26442925CC97780068380B /* Decodable+Extensions.swift in Sources */,
